@@ -1,0 +1,20 @@
+export function LogoN() {
+  return (
+    <svg
+      width="34"
+      height="34"
+      viewBox="0 0 34 34"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-label="Nelson logo"
+    >
+      <path
+        d="M7 27V7L27 27V7"
+        stroke="#0F172A"
+        strokeWidth="4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
