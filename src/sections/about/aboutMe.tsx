@@ -20,8 +20,8 @@ export default function AboutMe() {
       <div>
         <h1>{sectionAboutContentInfo[0].title}</h1>
         <h2>{sectionAboutContentInfo[0].subtitle}</h2>
-        <p>{sectionAboutContentInfo[0].paragraphs[0]}</p>
-        <p>{sectionAboutContentInfo[0].paragraphs[1]}</p>
+        <p>{sectionAboutContentInfo[0].paragraphs?.[0]}</p>
+        <p>{sectionAboutContentInfo[0].paragraphs?.[1]}</p>
       </div>
 
       <div className="grid grid-cols-4 gap-4">

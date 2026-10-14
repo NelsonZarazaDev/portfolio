@@ -14,8 +14,8 @@ export default function Home() {
       <div className="space-y-4">
         <h1>{sectionHeroContentInfo[0].title}</h1>
         <h2>{sectionHeroContentInfo[0].subtitle}</h2>
-        <p>{sectionHeroContentInfo[0].paragraphs[0]}</p>
-        <p>{sectionHeroContentInfo[0].paragraphs[1]}</p>
+        <p>{sectionHeroContentInfo[0].paragraphs?.[0]}</p>
+        <p>{sectionHeroContentInfo[0].paragraphs?.[1]}</p>
 
         <div>
           {sectionHeroContentInfo[0].buttons?.map((item, index) => {

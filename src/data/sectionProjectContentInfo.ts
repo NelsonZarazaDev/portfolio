@@ -1,4 +1,4 @@
-import type { IconTextPair } from "@/types/IconTextPair";
+import type { IconTextPair } from "@/types/iconTextPair";
 import type { TextGroup } from "@/types/textGroup";
 import {
   BuildingComplex,
