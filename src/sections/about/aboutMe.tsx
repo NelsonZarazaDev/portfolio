@@ -1,11 +1,20 @@
 import DynamicIcon from "@/components/own/DynamicIcon";
+import {
+  Timeline,
+  TimelineContent,
+  TimelineHeader,
+  TimelineItem,
+  TimelineSeparator,
+  TimelineTitle,
+} from "@/components/reui/timeline";
 import { Card } from "@/components/ui/card";
 import {
   sectionAboutContentInfo,
   cardInfo,
+  journeySectionContentInfo,
 } from "@/data/sectionAboutContentInfo";
 
-export default function aboutMe() {
+export default function AboutMe() {
   return (
     <div>
       <div>
@@ -25,6 +34,30 @@ export default function aboutMe() {
             </Card>
           );
         })}
+      </div>
+
+      <div className="flex">
+        <div className="flex">
+          <DynamicIcon icon={journeySectionContentInfo[0].data.icon} />
+          <div>
+            <div>{journeySectionContentInfo[0].data.title}</div>
+            <div>{journeySectionContentInfo[0].data.description}</div>
+          </div>
+        </div>
+
+        <Timeline orientation="horizontal">
+          {journeySectionContentInfo[0].items.map((items, index) => {
+            return (
+              <TimelineItem key={index + 1} step={index + 1}>
+                <TimelineHeader>
+                  <TimelineTitle>{items.title}</TimelineTitle>
+                  <TimelineContent>{items.description}</TimelineContent>
+                </TimelineHeader>
+                <TimelineSeparator />
+              </TimelineItem>
+            );
+          })}
+        </Timeline>
       </div>
     </div>
   );

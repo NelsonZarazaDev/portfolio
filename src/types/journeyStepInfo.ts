@@ -1,7 +1,7 @@
-import type { MetricInfo } from "@/types/metricInfo";
+import type { IconTextInfoInfo } from "@/types/iconTextInfoInfo";
 import type { TextGroup } from "@/types/textGroup";
 
 export interface JourneyStepInfo {
-  data: MetricInfo;
+  data: IconTextInfoInfo;
   items: TextGroup[];
 }

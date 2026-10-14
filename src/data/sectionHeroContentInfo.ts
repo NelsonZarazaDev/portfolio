@@ -1,5 +1,5 @@
 import type { SectionContentInfo } from "@/types/sectionContentInfo";
-import type { MetricInfo } from "@/types/metricInfo";
+import type { IconTextInfoInfo } from "@/types/iconTextInfoInfo";
 import {
   ChartNoAxesColumnIncreasing,
   CodeXml,
@@ -32,7 +32,7 @@ export const sectionHeroContentInfo: SectionContentInfo[] = [
   },
 ];
 
-export const metricInfo: MetricInfo[] = [
+export const metricInfo: IconTextInfoInfo[] = [
   {
     icon: UserRound,
     title: "3+",
