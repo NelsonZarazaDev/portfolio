@@ -6,7 +6,7 @@ import {
   metricInfo,
   stackInfo,
 } from "@/data/sectionHeroContentInfo";
-import DynamicIcon from "@/components/own/dynamicIcon";
+import DynamicIcon from "@/components/own/DynamicIcon";
 
 export default function Home() {
   return (

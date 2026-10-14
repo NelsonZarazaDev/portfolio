@@ -1,4 +1,4 @@
-import DynamicIcon from "@/components/own/dynamicIcon";
+import DynamicIcon from "@/components/own/DynamicIcon";
 import { Card } from "@/components/ui/card";
 import {
   sectionAboutContentInfo,
