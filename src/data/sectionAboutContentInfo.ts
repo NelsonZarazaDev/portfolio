@@ -1,5 +1,5 @@
 import type { JourneyStepInfo } from "@/types/journeyStepInfo";
-import type { MetricInfo } from "@/types/metricInfo";
+import type { IconTextInfoInfo } from "@/types/iconTextInfoInfo";
 import type { SectionContentInfo } from "@/types/sectionContentInfo";
 import {
   ChartNoAxesColumnIncreasing,
@@ -21,7 +21,7 @@ export const sectionAboutContentInfo: SectionContentInfo[] = [
   },
 ];
 
-export const cardInfo: MetricInfo[] = [
+export const cardInfo: IconTextInfoInfo[] = [
   {
     icon: ChartNoAxesColumnIncreasing,
     title: "Sistemas escalables",

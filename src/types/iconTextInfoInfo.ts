@@ -1,6 +1,6 @@
 import type { LucideIcon } from "lucide-react";
 import type { TextGroup } from "./textGroup";
 
-export interface MetricInfo extends TextGroup {
+export interface IconTextInfoInfo extends TextGroup {
   icon?: LucideIcon;
 }
