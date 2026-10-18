@@ -1,7 +1,6 @@
 import DynamicIcon from "@/components/own/DynamicIcon";
 import {
   section,
-  badge,
   heading,
   card,
   iconBox,
@@ -24,10 +23,9 @@ export default function Stack() {
   return (
     <section
       id="stack"
-      className={`${section} grid gap-8 bg-linear-to-br from-white to-blue-50 xl:grid-cols-[.8fr_1.2fr]`}
+      className={`${section} grid gap-8 bg-linear-to-b from-transparent via-white/45 to-transparent xl:grid-cols-[.8fr_1.2fr]`}
     >
       <header data-reveal>
-        <span className={badge}>{stackDisplay.sectionLabel}</span>
         <h1 className={heading}>{content.title}</h1>
         <h2 className="my-5 text-2xl font-semibold leading-tight tracking-tight text-slate-500">
           {content.subtitle}
@@ -115,7 +113,6 @@ export default function Stack() {
             </p>
           </div>
           <img
-            data-float
             src="/images/nelson-stack-mascot.png"
             alt={siteIdentity.name}
             className="w-full drop-shadow-xl"

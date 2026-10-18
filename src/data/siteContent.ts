@@ -47,7 +47,6 @@ export const contactContent = {
   visualLabel: "Nelson Mauricio disponible para nuevos proyectos",
   code: "</>",
   availability: "Disponible para nuevos proyectos",
-  values: [["⚡ Ideas", "en productos"], ["♙ Personas", "en proyectos"], ["▥ Tecnología", "con impacto"]],
   items: [
     { title: "Correo", value: "nelsonmauricio.dev@gmail.com", icon: Mail, href: "mailto:nelsonmauricio.dev@gmail.com" },
     { title: "LinkedIn", value: "linkedin.com/in/nelson-mauricio", icon: AtSign, href: "#" },
@@ -59,5 +58,4 @@ export const contactContent = {
 export const footerContent = {
   message: "Transformando ideas en soluciones digitales",
   location: "Ocaña, Colombia",
-  links: [CodeXml, AtSign, Mail, MapPin],
 };

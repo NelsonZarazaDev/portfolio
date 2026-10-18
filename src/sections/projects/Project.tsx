@@ -1,7 +1,6 @@
 import DynamicIcon from "@/components/own/DynamicIcon";
 import {
   section,
-  badge,
   heading,
   card,
   iconBox,
@@ -16,14 +15,13 @@ export default function Project() {
   return (
     <section
       id="proyectos"
-      className={`${section} bg-linear-to-br from-white to-blue-50`}
+      className={`${section} bg-linear-to-b from-transparent via-blue-50/30 to-transparent`}
     >
       <header
         data-reveal
         className="mb-9 grid items-center gap-6 lg:grid-cols-[1fr_30%]"
       >
         <div>
-          <span className={badge}>{projectDisplay.sectionLabel}</span>
           <h1 className={heading}>
             {content.title} <em className="not-italic">{content.subtitle}</em>
           </h1>

@@ -2,7 +2,6 @@ import DynamicIcon from "@/components/own/DynamicIcon";
 import PortfolioVisual from "@/components/own/PortfolioVisual";
 import {
   section,
-  badge,
   heading,
   card,
   iconBox,
@@ -12,7 +11,7 @@ import {
   journeySectionContentInfo,
   sectionAboutContentInfo,
 } from "@/data/sectionAboutContentInfo";
-import { aboutDisplay, siteIdentity } from "@/data/siteContent";
+import { aboutDisplay } from "@/data/siteContent";
 
 export default function AboutMe() {
   const content = sectionAboutContentInfo[0],
@@ -20,21 +19,10 @@ export default function AboutMe() {
   return (
     <section
       id="acerca"
-      className={`${section} grid items-center gap-10 xl:grid-cols-[.98fr_1.02fr]`}
+      className={`${section} grid items-center gap-10 bg-linear-to-b from-transparent via-white/40 to-transparent xl:grid-cols-[.98fr_1.02fr]`}
     >
-      <PortfolioVisual variant="about">
-        <div className="absolute bottom-6 right-[6%] z-30 w-[80%] max-w-xs rounded-2xl border border-white bg-white/85 p-6 shadow-xl backdrop-blur">
-          <strong className="block text-xl tracking-tight">
-            {siteIdentity.name}
-          </strong>
-          <span className="text-slate-500">{siteIdentity.role}</span>
-          <small className="mt-3 block text-emerald-700">
-            {siteIdentity.availability}
-          </small>
-        </div>
-      </PortfolioVisual>
+      <PortfolioVisual variant="about"></PortfolioVisual>
       <div data-reveal className="min-w-0">
-        <span className={badge}>{aboutDisplay.sectionLabel}</span>
         <h1 className={heading}>{content.title}</h1>
         <h2 className="my-5 text-2xl font-semibold leading-tight tracking-tight text-slate-500">
           {content.subtitle}

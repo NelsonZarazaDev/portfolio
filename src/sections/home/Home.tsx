@@ -3,7 +3,6 @@ import DynamicIcon from "@/components/own/DynamicIcon";
 import PortfolioVisual from "@/components/own/PortfolioVisual";
 import {
   section,
-  badge,
   heading,
   pill,
 } from "@/components/own/portfolioStyles";
@@ -12,20 +11,15 @@ import {
   sectionHeroContentInfo,
   stackInfo,
 } from "@/data/sectionHeroContentInfo";
-import { homeDisplay } from "@/data/siteContent";
 
 export default function Home() {
   const content = sectionHeroContentInfo[0];
   return (
     <section
       id="inicio"
-      className={`${section} grid items-center gap-10 pt-28 lg:min-h-screen lg:grid-cols-[1fr_1.08fr]`}
+      className={`${section} grid items-center gap-10 bg-linear-to-b from-transparent via-blue-50/25 to-transparent pt-28 lg:min-h-screen lg:grid-cols-[1fr_1.08fr]`}
     >
       <div data-reveal className="min-w-0">
-        <span className={badge}>
-          <i className="mr-2 size-2 rounded-full bg-emerald-500" />
-          {homeDisplay.availability}
-        </span>
         <h1 className={heading}>{content.title}</h1>
         <h2 className="mt-4 text-2xl font-semibold leading-tight tracking-tight text-slate-500 xl:text-3xl">
           {content.subtitle}

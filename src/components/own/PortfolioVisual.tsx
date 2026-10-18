@@ -11,9 +11,9 @@ export default function PortfolioVisual({
   return (
     <div
       data-reveal
-      className="relative isolate min-h-[470px] overflow-hidden rounded-[36px] bg-radial from-blue-200/80 via-blue-50 to-transparent sm:min-h-[620px] xl:min-h-[720px]"
+      className="relative isolate min-h-[470px] w-full overflow-hidden rounded-[36px] bg-transparent sm:min-h-[620px] xl:min-h-[720px]"
     >
-      <div className="absolute inset-x-[12%] inset-y-[10%] rounded-[32px] border border-white bg-white/20" />
+      <div className="absolute inset-x-[12%] inset-y-[10%] rounded-[32px] border border-white/35 bg-white/10" />
       <div
         data-float
         className="absolute left-[12%] top-10 z-10 size-20 rounded-full bg-radial-[at_30%_25%] from-white via-blue-300 to-blue-600 shadow-xl shadow-blue-500/20"
@@ -44,7 +44,6 @@ export default function PortfolioVisual({
       />
       <div className="absolute inset-x-0 bottom-0 z-10 flex justify-center">
         <img
-          data-float={mascot ? "" : undefined}
           src={mascot ? "/images/nelson-mascot.png" : "/images/nelson-hero.png"}
           alt={siteIdentity.name}
           className={`w-[90%] max-w-[590px] object-contain ${mascot ? "mb-20 drop-shadow-xl" : "[mask-image:linear-gradient(to_bottom,black_82%,transparent)]"}`}

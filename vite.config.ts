@@ -3,6 +3,7 @@ import babel from "@rolldown/plugin-babel";
 import { defineConfig } from "vite";
 import tailwindcss from "@tailwindcss/vite";
 import path from "path";
+import { codeInspectorPlugin } from 'code-inspector-plugin';
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -10,6 +11,9 @@ export default defineConfig({
     tailwindcss(),
     react(),
     babel({ presets: [reactCompilerPreset()] }),
+    codeInspectorPlugin({
+      bundler: "vite",
+    }),
   ],
   resolve: {
     alias: {
